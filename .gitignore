@@ -1,3 +1,4 @@
+
 # =============== #
 # Unity generated #
 # =============== #
@@ -5,20 +6,32 @@ Temp/
 Obj/
 UnityGenerated/
 Library/
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 ExportedObj/
-*.svd
-*.userprefs
+.consulo/
 *.csproj
-*.pidb
-*.suo
-*.sln
-*.user
 *.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
 *.booproj
+*.svd
+*.pdb
+*.opendb
+# Visual Studio cache directory
+.vs/
+
 
 # ============ #
 # OS generated #
@@ -36,6 +49,8 @@ Thumbs.db
 # for others   #
 # ============ #
 *.app
+
+
 
 *.log #log files, for some plugins
 *.pyc #python bytecode cache, for some plugins.
