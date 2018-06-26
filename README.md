@@ -23,8 +23,7 @@ $ cd RealtimeChart_Server
 $ python main.py
 ```
 
-Then, open Unity3D Editor and open Scenes/MainScene
-Click the Play Button
+Then, open Unity3D Editor, import the project and open Scenes/MainScene
 
 
 ## Description
