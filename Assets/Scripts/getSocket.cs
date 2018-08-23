@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class getSocket : MonoBehaviour
 {
-    public string host = "127.0.0.1";
+    public string host = "192.168.11.19";
     public int port = 10086;
     private string message;
     private Socket client;

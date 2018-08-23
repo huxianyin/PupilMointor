@@ -7,8 +7,6 @@ using System.Linq;
 
 public class View : MonoBehaviour {
 
-    public GameObject bar_chart;
-    public GameObject pie_chart;
     public GameObject graph_chart;
     public float float_time = 0.5f;
 
@@ -39,15 +37,8 @@ public class View : MonoBehaviour {
         foreach (DataInfo info in data.data_list)
         {
             string chart_name = info.chart;
-            if(chart_name.Contains("bar") & bar_chart != null)
-            {
-                bar_chart.GetComponent<BarChart>().DataSource.SlideValue(info.category, info.group, (double)info.value[1], float_time);
-            }
-            else if(chart_name.Contains("pie") & pie_chart != null)
-            {
-                pie_chart.GetComponent<PieChart>().DataSource.SlideValue(info.category, (double)info.value[1], float_time);
-            }
-            else if (!chart_name.Contains("pie") & !chart_name.Contains("bar") & graph_chart != null)
+
+            if (!chart_name.Contains("pie") & !chart_name.Contains("bar") & graph_chart != null)
             {
                 //Debug.LogWarning(chart_name+info.category);
                 graph_chart.GetComponent<GraphChartBase>().DataSource.AddPointToCategoryRealtime(info.category, (double)info.value[0], (double)info.value[1]);
