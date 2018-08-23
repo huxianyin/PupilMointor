@@ -1,6 +1,6 @@
 # human_RealtimeChart_Unity
 
-Example project (sever: python, client: Unity3D(C#))
+Client Unity Project for Pupil Diamter monitor
 Chart sample ([Graph and Chart](https://assetstore.unity.com/packages/tools/gui/graph-and-chart-78488))
 
 ![img](img.png)
@@ -16,15 +16,9 @@ Chart sample ([Graph and Chart](https://assetstore.unity.com/packages/tools/gui/
 
 ## Run
 
-To start python server,
-
 ```
-$ cd RealtimeChart_Server
-$ python main.py
+ open Unity3D Editor, import the project and open Scenes/MainScene
 ```
 
-Then, open Unity3D Editor, import the project and open Scenes/MainScene
 
-
-## Description
 
