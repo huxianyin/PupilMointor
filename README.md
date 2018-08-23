@@ -1,4 +1,4 @@
-# human_RealtimeChart_Unity
+# PupilMonitor (Client)
 
 Client Unity Project for Pupil Diamter monitor
 Chart sample ([Graph and Chart](https://assetstore.unity.com/packages/tools/gui/graph-and-chart-78488))

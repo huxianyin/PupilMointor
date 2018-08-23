@@ -40,7 +40,7 @@ public class getSocket : MonoBehaviour
         catch (Exception e)
         {
             Console.WriteLine(e.Message);
-            return;
+            Application.Quit();
         }
     }
 
@@ -106,8 +106,11 @@ public class getSocket : MonoBehaviour
     void OnApplicationQuit()
     {
         receive_data = false;
-        client.Close();
-        clientReceiveThread.Abort();
+        if (client != null){
+            client.Close();}
+        if (clientReceiveThread != null){
+            clientReceiveThread.Abort();
+        }
         Debug.Log("Application ending after " + Time.time + " seconds");
     }
 
